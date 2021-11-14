@@ -1,0 +1,10 @@
+<h1>Hi! Welcome to the Index page of the Task Manager!</h1>
+
+
+
+<% @tasks.each do |task| %>
+  <div class="container">
+  <h3><%= task.id %>. <%= link_to task.name, tasks_path(task) %></h3>
+  <p><%= task.details %></p>
+  </div>
+<% end %>
