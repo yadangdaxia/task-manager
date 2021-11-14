@@ -1,11 +1,5 @@
-<h1>Add new task</h1>
+<h1>Edit your task<h1>
 
-<p> This part not working </p>
-<%= render 'form', task: @task %>
-
-
-<p>Use this form</p>
-<%= @task %>
 <%= form_for(@task) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>

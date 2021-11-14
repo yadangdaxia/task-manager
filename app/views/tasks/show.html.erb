@@ -1,3 +1,6 @@
-<h1>SHOW</h1>
+<h1>Task Details</h1>
 <%= @task.name %>
 <%= @task.details %>
+<%= @task.completed %>
+
+<%= link_to "edit", edit_path(@task) %>

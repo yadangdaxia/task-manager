@@ -2,14 +2,26 @@
 <html>
   <head>
     <title>TaskManager</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
   </head>
 
   <body>
+    <div id="header">
+      <h2>Task Manager Application</h2>
+      <ul>
+        <li><%= link_to "Home", tasks_path %></li>
+        <li><%= link_to "New Task", new_path %></li>
+      </ul>
+    </div>
+
+
     <%= yield %>
   </body>
 </html>

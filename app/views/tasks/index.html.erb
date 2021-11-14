@@ -1,10 +1,9 @@
-<h1>Hi! Welcome to the Index page of the Task Manager!</h1>
-
-
+<h1>Here is your To-Do list:</h1>
+<p>Click a task for details.<p>
 
 <% @tasks.each do |task| %>
   <div class="container">
-  <h3><%= task.id %>. <%= link_to task.name, tasks_path(task) %></h3>
+  <h3><%= task.id %>. <%= link_to task.name, show_path(task) %></h3>
   <p><%= task.details %></p>
   </div>
 <% end %>
